@@ -183,6 +183,9 @@ img#pestanas4{grid-area: pestanas4;}
     }
 }
 
+body{
+    display: flex;
+}
 li{
     list-style-type: none;
     padding: 10px;
