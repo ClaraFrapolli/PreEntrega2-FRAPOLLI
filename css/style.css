@@ -3,6 +3,13 @@
 
 @media ( min-width: 1023px){
    
+
+    a:hover{
+        background-color: #FFDDD2;
+        color: black;
+        font-size: 18px;
+        border-radius: 30%;
+    }
     ul{
         display: flex;
         list-style: none;
@@ -19,10 +26,16 @@
     a{text-decoration: none;
         color:black}
     
-    .texto{
-        font-style: italic;
-        font-size: 60px;
-    }    
+        .texto{
+            font-size: 28px;
+            margin: 2px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: italic;
+            text-align: center;
+        }
+    
+    
+    
     .picture{
         border-radius: 50%;
         height: 50%;
@@ -33,7 +46,7 @@
     
     
     .servicio1, .servicio2, .servicio3{
-        background-color: #FFD1D1;
+        background-color: #FFDDD2;
         border-radius:20px ;
         padding: 15px;
         margin: 10px;
@@ -44,28 +57,53 @@
         width: 200px;
         height: 200px;
         margin: 0 auto;
+        
         }            
     .primero{background-color: #efefef;}    
     
     .formulario{
-    
-    display: inline-block;
-    height: 350px;
-    width: 350px;
-    background-color: #FFD1D1;
-    }
+
+        display: inline-block;
+        height: 420px;
+        width: 350px;
+        background-color: lightpink;
+        margin-left: 20px;
+        
+        
+        }
+        input[type=text], textarea{
+            border-radius: 10px;
+            box-shadow: 0 0 10px white;
+            
+        }
+
+        textarea{
+            width: 175px;
+            
+        }
+
+     .consulta{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 13px;}   
     
     .footer1 {
         height: 25px;
         width: 25px;
-        padding: 0 150px 150px 150px;
-       margin-top:20px ;
+        padding: 0 30px 30px 150px;
+       margin-top:5px ;
         
     }
     footer{
         justify-content: space-around;
        
     }
+    select{
+        display: inline-block;
+        width: 50%;
+        height: 30px;
+        text-align: center;
+        background-color: #efefef;
+        margin: 10px 0;}
     
     .mapa{ 
     height: 50%;
@@ -73,8 +111,8 @@
     padding: 0 50px 50px 0;}
 
     .logo{
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 130px;
         justify-content: space-between;
     }
   
@@ -89,30 +127,14 @@
      
     }
     
-    .logo{
-        width: 130px;
-        height: 130px;
-      
-    }
-       
+    
+
     
     
-    .texto{
-    font-size: 20px;
-    margin: 2px;
-    }
-    
-    .footer1
-       {
-        width: 25px;
-        height: 25px;
-        padding: 0px 30px 30px 30px;
-        margin-top: 5px; 
-        }
 
     header, footer{
         display: flex;
-        background-color: lightpink;
+        background-color: #FFB4B4;
         display: flex;
          justify-content: space-between;
         align-items: center;
@@ -201,6 +223,13 @@ img#pestanas4{grid-area: pestanas4;}
 .mapa{grid-area: mapa;}
 }
 
+.titulo-promo{
+    text-align: center;
+}
+.promo1{
+    margin-bottom: 10px;
+}
+.precio{margin-bottom: 30px;}
 /*VISTA MOBILE*/
 
 @media(max-width:480px)
@@ -223,11 +252,7 @@ img#pestanas4{grid-area: pestanas4;}
      }
 
 
-    header, footer{
-        display: flex;
-        flex-direction: row;
-        background-color: #FFD1D1;
-    }
+    
 
     .primero{
         margin-top: 3px;
@@ -264,7 +289,7 @@ img#pestanas4{grid-area: pestanas4;}
             background-color: #FFD1D1;
             border-radius:20px ;
             padding: 15px;
-            margin: 10px;
+            margin: 0px;
             }
         h3, .info{text-align: center;}   
             
@@ -275,19 +300,13 @@ img#pestanas4{grid-area: pestanas4;}
             }            
         .primero{background-color: #efefef;}    
         
-        .formulario{
         
-        display: inline-block;
-        height: 350px;
-        width: 350px;
-        background-color: #FFD1D1;
-        }
-        
+
         .footer1 {
             height: 25px;
             width: 25px;
             padding: 0 150px 150px 150px;
-           margin-top:20px ;
+            margin-top:20px ;
             
         }
         footer{
@@ -295,16 +314,11 @@ img#pestanas4{grid-area: pestanas4;}
            
         }
 
-        .mapa{ 
-            height: 50%;
-            width: 50%;
-            padding: 0 50px 50px 0;}
-        
-            .logo{
-                width: 300px;
-                height: 300px;
-                justify-content: space-between;
+        .maps{ 
+            width: 100%
             }
+        
+            
           
             li{
                 list-style-type: none;
@@ -320,7 +334,7 @@ img#pestanas4{grid-area: pestanas4;}
             .logo{
                 width: 130px;
                 height: 130px;
-              
+                justify-content: space-between;
             }
                
             
@@ -339,13 +353,13 @@ img#pestanas4{grid-area: pestanas4;}
                 margin-top: 5px; 
                 }
         
-            header, footer{
-                display: flex;
-                background-color: lightpink;
-                display: flex;
-                 justify-content: space-between;
-                align-items: center;
-            }
+                header, footer{
+                
+                    background-color: #FFD1D1;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
              
           
           
@@ -369,10 +383,12 @@ img#pestanas4{grid-area: pestanas4;}
           
             display: grid;
             gap: 50px;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 100%;
             grid-template-rows: auto auto auto;
             grid-template-areas: 
-            "servicio1 servicio2 servicio3";
+            "servicio1" 
+            "servicio2" 
+            "servicio3";
         }
         .servicio1{grid-area: servicio1;}
         .servicio2{grid-area: servicio2;}
@@ -381,13 +397,22 @@ img#pestanas4{grid-area: pestanas4;}
         .portfolio{
             display: grid;
             gap: 20px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: auto auto auto auto;
-            grid-template-areas: 
-            "titulop titulop titulop titulop"
-            "unas1 unas2 unas3 unas4"
-            "cejas1 cejas2 cejas3 cejas4"
-            "pestanas1 pestanas2 pestanas3 pestanas4";
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-areas:  
+            "titulop"
+            "unas1" 
+            "unas2" 
+            "unas3" 
+            "unas4"
+            "cejas1" 
+            "cejas2" 
+            "cejas3" 
+            "cejas4"
+            "pestanas1" 
+            "pestanas2"
+            "pestanas3" 
+            "pestanas4";
         }
         
         img#unas1{grid-area: unas1;}
@@ -405,16 +430,19 @@ img#pestanas4{grid-area: pestanas4;}
         img#pestanas3{grid-area: pestanas3;}
         img#pestanas4{grid-area: pestanas4;}
         
-        
+       .titulop{
+        text-align: center;
+       } 
         .contacto{
             text-align: center;
             display: grid;
             gap: 50px;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto;
             grid-template-areas: 
-            "consulta consulta"
-            "formulario mapa"
+            "consulta" 
+            "formulario"
+            "mapa"
             ;
         }
         .consulta{grid-area: consulta;}
@@ -422,3 +450,30 @@ img#pestanas4{grid-area: pestanas4;}
         }
         .mapa{grid-area: mapa;}
 }
+.formulario{
+
+    display: inline-block;
+    height: 420px;
+    width: 350px;
+    background-color: lightpink;
+    margin-left: 8px;
+    }
+   
+
+    textarea{
+        width: 175px;
+    }
+    select{
+        display: inline-block;
+        width: 50%;
+        height: 30px;
+        text-align: center;
+        background-color: #efefef;
+        margin: 10px 0;}
+
+        a:hover{
+            background-color: #FFDDD2;
+            color: black;
+            font-size: 10px;
+            border-radius: 30%;
+        }
